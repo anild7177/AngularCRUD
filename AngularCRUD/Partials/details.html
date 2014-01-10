@@ -1,0 +1,21 @@
+﻿<form class="form-horizontal">
+    <div class="form-control"ng-class="{ error: form.Text.$invalid }">
+        <label class="control-label" for="Text">Todo</label>
+        <input type="text" ng-model="item.Text" id="Text" placeholder="Todo"/>
+    </div>
+
+    <div class="form-control" ng-class="{ error: form.DueDate.$invalid }">
+        <label class="control-label" for="DueDate">Due</label>
+        <input type="date" ng-model="item.DueDate" id="DueDate" placeholder="Due" />
+    </div>
+
+    <div class="form-control" ng-class="{ error: form.Priority.$invalid }">
+        <label class="control-label" for="Priority">Priority</label>
+        <input type="number" ng-model="item.Priority" id="Priority" placeholder="Priority" />
+    </div>
+
+    <div class="form-control">
+        <button ng-click="save()" class="btn btn-primary">Add</button>
+        <a href="#/" class="btn"></a>
+    </div>
+</form>
